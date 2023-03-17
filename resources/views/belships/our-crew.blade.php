@@ -1,12 +1,12 @@
 <x-app-layout>
-    <div class="py-12">
-        <div class="max-w-6xl p-3 text-gray-600 dark:text-gray-200 text-justify mx-auto">
-            <div class="bg-cover bg-bottom h-80 rounded-md" style="background-image:url({{ asset('images/belstar.jpg') }})">
+    <div class="py-6">
+        <div class="max-w-8xl text-gray-600 dark:text-gray-200 text-justify mx-auto p-6 md:p-8">
+            <div class="bg-gradient-to-r from-slate-100 to-slate-700 h-80 rounded-md">
                 <div class="flex items-center h-full w-full">
-                    <h1 class="p-3 text-6xl text-gray-900 font-bold font-serif">Crew Management</h1>
+                    <h1 class="p-3 text-6xl text-gray-900 font-bold font-serif lg:p-36">Crew Management</h1>
                 </div>
             </div>
-            <ul class="list-disc list-inside text-2xl">
+            <ul class="mt-8 max-w-7xl mx-auto list-disc list-inside text-2xl">
                 <li class="leading-loose">
                     We provide full crew management services to shipowners and shipmanagers worldwide.            
                 </li>
@@ -31,7 +31,6 @@
                 <li class="leading-loose">
                     We have highly motivated and well trained Myanmar crew to ensure smooth and safe shipboard operations!
                 </li>
-                
             </ul>                  
         </div>
     </div>
