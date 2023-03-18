@@ -1,15 +1,15 @@
 <x-app-layout>
     <div class="py-6">
-        <div class="max-w-8xl mx-auto text-center text-gray-600 dark:text-gray-200 p-6 md:p-8">
-            <div class="bg-gradient-to-r from-slate-100 to-slate-700 h-80 rounded-md">
+        <div class="max-w-8xl mx-auto text-center text-gray-600 dark:text-gray-200">
+            <div class="bg-gradient-to-r from-slate-100 to-slate-700 h-80 p-6 md:p-8">
                 <div class="flex items-center h-full w-full">
                     <h1 class="p-3 text-6xl text-gray-900 font-bold font-serif lg:p-36">Vessel List for Our Crew Manning</h1>
                 </div>
             </div>
             
-            <div class="max-w-7xl mx-auto">
-                <h1 class="mt-8 p-3 text-4xl text-gray-600 dark:text-gray-200 font-bold font-serif text-start">Bulk Carriers</h1>
-                <div class="mx-auto mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
+            <div class="max-w-7xl mx-auto p-6 md:p-8">
+                <h1 class="mt-8 p-3 text-5xl text-gray-600 dark:text-gray-200 font-bold font-serif text-start">Bulk Carriers</h1>
+                <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
                     <div class="text-2xl font-bold">
                         <img src="{{ asset('images/belaja.jpeg') }}" alt="Belaja" class="rounded-md h-96 w-full md:h-80  lg:h-52">    
                         <a href="#">MV. BELAJA</a>

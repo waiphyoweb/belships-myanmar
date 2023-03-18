@@ -1,15 +1,13 @@
 <x-app-layout>
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <img src="{{ asset('images/belstar.jpg') }}" alt="Belstar" class="rounded-lg w-full">
+    <div class="py-6">
+        <div class="max-w-8xl mx-auto sm:px-6 lg:px-8">
+            <img src="{{ asset('images/belstar.jpg') }}" alt="Belstar" class="rounded-lg mx-auto">
         </div>
 
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-8">
+        <div class="max-w-7xl mx-auto sm:p-6 lg:p-8 mt-8">
             <div class="p-3 text-gray-600 dark:text-gray-200">
-                <h1 class="text-6xl font-bold font-serif">Welcome to Belships</h1>
-            </div>
-            <div class="p-3 text-gray-600 dark:text-gray-200 text-2xl text-justify">
-                <ul class="list-disc list-inside">
+                <h1 class="text-5xl font-bold font-serif">Welcome to Belships</h1>
+                <ul class="mt-6 list-disc list-inside text-2xl text-justify">
                     <li class="leading-loose ">Belships (Myanmar) Shipmanagement Ltd is established in Myanmar as branch of Belships Management (Singapore) Pte Ltd. Currently we are supplying well-trained and qualify Myanmar crew and officers to various companies for deck and engine department.</li>
                     <li class="leading-loose ">
                         We have been in the business for more than 30 years,
@@ -18,11 +16,9 @@
                 </ul>                  
             </div>
 
-            <div class="p-3 text-gray-600 dark:text-gray-200 mt-8">
-                <h1 class="text-6xl font-bold font-serif">About Us</h1>
-            </div>
-            <div class="p-3 text-gray-600 dark:text-gray-200 text-2xl text-justify">
-                <ul class="list-disc list-inside">
+            <div class="p-3 text-gray-600 gap-4 dark:text-gray-200 mt-8">
+                <h1 class="text-5xl font-bold font-serif">About Us</h1>
+                <ul class="mt-6 list-disc list-inside text-2xl text-justify">
                     <li class=" leading-loose">
                         With more than 30 years experience in this industry, we offer Reliable & Efficient management services to meet Shipowners' requirement.
                     </li>
@@ -38,8 +34,8 @@
                 </ul>                 
             </div>
         </div>
-        <div class="max-w-8xl mx-auto sm:px-6 lg:px-8 my-8">
-            <div class="p-6 text-gray-600 dark:text-sky-200 bg-sky-200 dark:bg-gray-600 overflow-hidden shadow-sm sm:rounded-lg">
+        <div class="sm:px-6 lg:px-8 my-8">
+            <div class="p-6 text-gray-600 dark:text-gray-200 bg-slate-200 dark:bg-slate-600 overflow-hidden shadow-sm sm:rounded-lg">
                 <p class="p-6 text-5xl font-mono text-center">
                     "Only good things can come from combining quality management & manning."
                 </p>
