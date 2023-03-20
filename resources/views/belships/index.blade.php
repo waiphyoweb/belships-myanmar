@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="py-6">
-        <div class="max-w-8xl mx-auto sm:px-6 lg:px-8">
-            <img src="{{ asset('images/belstar.jpg') }}" alt="Belstar" class="rounded-lg mx-auto">
+        <div class="max-w-8xl mt-12 mx-auto sm:px-6 lg:px-8">
+            <img src="{{ asset('images/belstar.jpg') }}" alt="Belstar" class="rounded-lg w-5/6 h-1/6 mx-auto">
         </div>
 
         <div class="max-w-7xl mx-auto sm:p-6 lg:p-8 mt-8">
@@ -34,20 +34,20 @@
                 </ul>                 
             </div>
         </div>
-        <div class="sm:px-6 lg:px-8 my-8">
-            <div class="p-6 text-gray-600 dark:text-gray-200 bg-slate-200 dark:bg-slate-600 overflow-hidden shadow-sm sm:rounded-lg">
-                <p class="p-6 text-5xl font-mono text-center">
-                    "Only good things can come from combining quality management & manning."
-                </p>
-            </div>
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 p-3 text-gray-600 dark:text-gray-200">
-                <p class="italic text-center text-lg mt-8">
-                    Call us now to register with us. 
-                </p>           
-                <p class="italic text-center text-lg">
-                    +95 9 97215 7284 or +95 1 297768    
-                </p>           
-            </div>
+        
+        <div class="mt-8 max-w-4xl mx-auto text-gray-600 dark:text-gray-200 overflow-hidden">
+            <p class="p-6 leading-loose text-5xl font-mono text-center">
+                "Only good things can come from combining quality management & manning."
+            </p>
+        </div>
+
+        <div class="p-3 mt-8 max-w-7xl mx-auto sm:px-6 lg:px-8 p-3 text-gray-600 dark:text-gray-200">
+            <p class="italic text-center text-lg mt-8">
+                Call us now to register with us. 
+            </p>           
+            <p class="italic text-center text-lg">
+                +95 9 97215 7284 or +95 1 297768    
+            </p>           
         </div>
     </div>
 </x-app-layout>
