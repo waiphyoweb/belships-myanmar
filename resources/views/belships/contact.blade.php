@@ -8,7 +8,7 @@
             </div>
 
             <div class="max-w-7xl mx-auto mt-8 p-6 md:p-8">
-                <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-12">
+                <div class="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-20">
                     <div class="p-3 text-justify shadow-lg dark:shadow-gray-800 shadow-gray-2lg dark:shadow-gray-800 shadow-gray-200 rounded-md">
                         <h2 class="p-3 text-bold text-5xl">Myanmar</h2>
                         <ul class="mt-6 p-3 list-none text-2xl">

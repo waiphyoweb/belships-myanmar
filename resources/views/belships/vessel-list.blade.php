@@ -12,15 +12,15 @@
                 <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
                     <div class="text-2xl font-bold">
                         <img src="{{ asset('images/belaja.jpeg') }}" alt="Belaja" class="rounded-md h-96 w-full md:h-80  lg:h-52">    
-                        <a href="#">MV. BELAJA</a>
+                        <a href="https://www.vesselfinder.com/vessels/BELAJA-IMO-9873280-MMSI-355455000">MV. BELAJA</a>
                     </div>
                     <div class="text-2xl font-bold">
                         <img src="{{ asset('images/belatlantic.jpeg') }}" alt="Belatlantic" class="rounded-md h-96 w-full md:h-80 lg:h-52">    
-                        <a href="#">MV. BELATLANTIC</a>
+                        <a href="https://www.vesselfinder.com/vessels/BELATLANTIC-IMO-9744104-MMSI-258297000">MV. BELATLANTIC</a>
                     </div>
                     <div class="text-2xl font-bold">
                         <img src="{{ asset('images/belfast.jpeg') }}" alt="Belfast" class="rounded-md h-96 w-full md:h-80 lg:h-52">    
-                        <a href="#">MV. BELFAST</a>
+                        <a href="https://www.vesselfinder.com/vessels/BELFAST-IMO-9894789-MMSI-373794000">MV. BELFAST</a>
                     </div>
                     <div class="text-2xl font-bold">
                         <img src="{{ asset('images/belforce.jpg') }}" alt="Belforce" class="rounded-md h-96 w-full md:h-80 lg:h-52">    
