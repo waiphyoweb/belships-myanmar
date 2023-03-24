@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Job;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
@@ -31,9 +32,17 @@ class JobController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request): RedirectResponse
     {
-        //
+        $validated = $request->validate([
+            'job_title' => 'required',
+            'ship_type' => 'required',
+            'salary' => 'required',
+            'contract_in_months' => 'required',
+            'requirement' => 'required',
+        ]);
+
+        return redirect(route('jobs.index'));
     }
 
     /**
