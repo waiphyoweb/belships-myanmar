@@ -33,17 +33,12 @@
                         </div>
                     </div>
                     <div class="mt-6 flex justify-start">
-                        <div class="flex items-center bg-gray-600 dark:bg-gray-200 rounded-md w-36 h-12 text-lg text-white justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                                                   
-                            <button type="submit" class="mx-3">{{ __('Create') }}</button>
-                        </div>
+                        <x-primary-button>
+                            {{ __('Create') }}
+                        </x-primary-button>
                     </div>
                 </form>
             </div>
-
         </div>
     </div>
 </x-app-layout>

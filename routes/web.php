@@ -49,7 +49,7 @@ Route::get('/articles', function () {
 
 //Chirp Routes
 Route::resource('jobs', JobController::class)
-    ->only(['index', 'create', 'store', 'edit', 'update'])
+    ->only(['index', 'create', 'store', 'edit', 'update', 'destroy', 'show'])
     ->middleware(['auth', 'verified']);
 
 Route::middleware('auth')->group(function () {
