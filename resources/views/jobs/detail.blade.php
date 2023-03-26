@@ -102,6 +102,10 @@
                             <textarea name="address" placeholder="{{ __('Address') }}" class="block w-full border-gray-300 focus:border-indigo-300 focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm">{{ old('address') }}</textarea>
                             <x-input-error class="mt-2" :messages="$errors->get('message')" />
                         </div>
+                        <div>
+                            <textarea name="job_id" placeholder="{{ __('Job') }}" class="hidden block w-full border-gray-300 focus:border-indigo-300 focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm">{{ old('job_id', $job->id) }}</textarea>
+                            <x-input-error class="mt-2" :messages="$errors->get('message')" />
+                        </div>
                     </div>
                     <div class="mt-6 flex justify-start">
                         <x-primary-button>

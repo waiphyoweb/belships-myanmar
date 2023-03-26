@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Employee;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class EmployeeController extends Controller
 {
@@ -33,12 +34,13 @@ class EmployeeController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
-        $request->validate([
+        $validated = $request->validate([
             'name' => 'required',
             'age' => 'required',
             'contact' => 'required',
             'email' => 'required',
             'address' => 'required',
+            'job_id' => 'required',
         ]);
 
         $employee = new Employee();
@@ -56,17 +58,21 @@ class EmployeeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Employee $employee)
+    public function show(Employee $employee): View
     {
-        //
+        return view('employees.detail', [
+            'employee' => $employee,
+        ]);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Employee $employee)
+    public function edit(Employee $employee): View
     {
-        //
+        return view('employees.edit', [
+            'employee' => $employee,
+        ]);
     }
 
     /**
@@ -80,8 +86,10 @@ class EmployeeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Employee $employee)
+    public function destroy(Employee $employee): RedirectResponse
     {
-        //
+        $employee->delete();
+
+        return redirect(route('employees.index'));
     }
 }
