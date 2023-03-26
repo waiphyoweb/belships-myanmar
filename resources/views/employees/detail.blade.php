@@ -62,13 +62,16 @@
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
                             <path stroke-linecap="round" d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
                         </svg>                                                       
-                        <p class="text-2xl">Email: {{ $employee->email }} Months</p>
+                        <p class="text-2xl">Email: {{ $employee->email }}</p>
                     </div>
                     <div class="flex flex-row items-center space-x-8">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                         </svg>                                                                             
                         <p class="text-2xl">Address: {{ $employee->address }}</p>
+                    </div>
+                    <div class="flex items-center border-2 border-gray-600 hover:opacity-75 rounded-md w-24 h-10 text-gray text-lg justify-center">
+                        <a href="{{ route('employees.index') }}">Back</a>
                     </div>
                 </div>
             </div>

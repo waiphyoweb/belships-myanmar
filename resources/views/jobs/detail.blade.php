@@ -13,10 +13,11 @@
                         <div>
                             <small class="ml-2 text-sm text-gray-600">{{ $job->created_at->format('j M Y, g:i a') }}</small>
                             @unless ($job->created_at->eq($job->updated_at))
-                                <small class="text-sm text-gray-600">
-                                    &middot; {{ __('edited') }}
-                                </small>
+                            <small class="text-sm text-gray-600">
+                                &middot; {{ __('edited') }}
+                            </small>
                             @endunless
+                            <small class="ml-2 text-sm text-gray-600">{{ $job->updated_at->format('j M Y, g:i a') }}</small>
                         </div>
                         <x-dropdown>
                             <x-slot name="trigger">
@@ -74,6 +75,9 @@
                         <div class="mt-3 p-3 flex items-center">
                             <p class="text-xl">{{ $job->requirement }}</p>
                         </div>
+                    </div>
+                    <div class="flex items-center border-2 border-gray-600 hover:opacity-75 rounded-md w-24 h-10 text-gray text-lg justify-center">
+                        <a href="{{ route('jobs.index') }}">Back</a>
                     </div>
                 </div>
             </div>

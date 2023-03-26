@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\ProfileController;
@@ -56,6 +57,11 @@ Route::resource('jobs', JobController::class)
 //Employee Routes
 Route::resource('employees', EmployeeController::class)
     ->only(['index', 'store', 'edit', 'update', 'destroy', 'show'])
+    ->middleware(['auth', 'verified']);
+
+//Article Routes
+Route::resource('articles', ArticleController::class)
+    ->only(['index', 'create', 'store', 'edit', 'update', 'destroy', 'show'])
     ->middleware(['auth', 'verified']);
 
 Route::middleware('auth')->group(function () {
