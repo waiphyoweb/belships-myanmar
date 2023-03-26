@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="py-6">
-        <div class="max-w-8xl mt-12 mx-auto sm:px-6 lg:px-8">
-            <img src="{{ asset('images/belstar.jpg') }}" alt="Belstar" class="rounded-lg w-5/6 h-1/6 mx-auto">
+        <div class="max-w-8xl mt-16 mx-auto">
+            <img src="{{ asset('images/belstar.jpg') }}" alt="Belstar" class="object-cover object-bottom w-4/5 h-56 mx-auto">
         </div>
 
         <div class="max-w-7xl mx-auto sm:p-6 lg:p-8 mt-8">
