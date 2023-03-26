@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -47,9 +48,14 @@ Route::get('/articles', function () {
     return view('articles.index');
 })->middleware(['auth', 'verified'])->name('articles.index');
 
-//Chirp Routes
+//Job Routes
 Route::resource('jobs', JobController::class)
     ->only(['index', 'create', 'store', 'edit', 'update', 'destroy', 'show'])
+    ->middleware(['auth', 'verified']);
+    
+//Employee Routes
+Route::resource('employees', EmployeeController::class)
+    ->only(['index', 'store', 'edit', 'update', 'destroy', 'show'])
     ->middleware(['auth', 'verified']);
 
 Route::middleware('auth')->group(function () {

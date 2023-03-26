@@ -13,7 +13,18 @@ return new class extends Migration
     {
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('age');
+            $table->string('contact');
+            $table->string('email');
+            $table->string('address');
+            $table->unsignedBigInteger('job_id');
             $table->timestamps();
+
+            $table->foreign('job_id')
+              ->references('id')
+              ->on('jobs')
+              ->onDelete('cascade');
         });
     }
 

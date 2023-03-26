@@ -75,13 +75,40 @@
                             <p class="text-xl">{{ $job->requirement }}</p>
                         </div>
                     </div>
-                    <div class="flex items-center bg-gray-600 rounded-md w-24 h-10 text-white text-lg justify-center">
-                        {{-- <x-nav-link :href="route('employees.create')" :active="request()->routeIs('employees.create')">
-                            {{ __('Apply') }}
-                        </x-nav-link> --}}
-                        <a href="#">Apply</a>
-                    </div>
                 </div>
+            </div>
+
+            <div class="max-w-7xl mt-8 mx-auto p-6 md:p-8">
+                <form action="{{ route('employees.store') }}" method="post">
+                    @csrf
+                    <div class="grid grid-cols-1 gap-6">
+                        <div>
+                            <textarea name="name" placeholder="{{ __('Name') }}" class="block w-full border-gray-300 focus:border-indigo-300 focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm">{{ old('name') }}</textarea>
+                            <x-input-error class="mt-2" :messages="$errors->get('message')" />
+                        </div>
+                        <div>
+                            <textarea name="age" placeholder="{{ __('Age') }}" class="block w-full border-gray-300 focus:border-indigo-300 focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm">{{ old('age') }}</textarea>
+                            <x-input-error class="mt-2" :messages="$errors->get('message')" />
+                        </div>
+                        <div>
+                            <textarea name="contact" placeholder="{{ __('Contact') }}" class="block w-full border-gray-300 focus:border-indigo-300 focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm">{{ old('contact') }}</textarea>
+                            <x-input-error class="mt-2" :messages="$errors->get('message')" />
+                        </div>
+                        <div>
+                            <textarea name="email" placeholder="{{ __('Email') }}" class="block w-full border-gray-300 focus:border-indigo-300 focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm">{{ old('email') }}</textarea>
+                            <x-input-error class="mt-2" :messages="$errors->get('message')" />
+                        </div>
+                        <div>
+                            <textarea name="address" placeholder="{{ __('Address') }}" class="block w-full border-gray-300 focus:border-indigo-300 focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm">{{ old('address') }}</textarea>
+                            <x-input-error class="mt-2" :messages="$errors->get('message')" />
+                        </div>
+                    </div>
+                    <div class="mt-6 flex justify-start">
+                        <x-primary-button>
+                            {{ __('Apply') }}
+                        </x-primary-button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

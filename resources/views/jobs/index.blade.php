@@ -79,16 +79,8 @@
                             </svg>                              
                             <p class="text-2xl">Contract: {{ $job->contract_in_months }} Months</p>
                         </div>
-                        <div class="flex flex-row items-center space-x-4">
-                            <div class="flex items-center bg-gray-600 hover:opacity-75 rounded-md w-24 h-10 text-white text-lg justify-center">
-                                {{-- <x-nav-link :href="route('employees.create')" :active="request()->routeIs('employees.create')">
-                                    {{ __('Apply') }}
-                                </x-nav-link> --}}
-                                <a href="#">Apply</a>
-                            </div>
-                            <div class="flex items-center border-2 border-gray-600 hover:opacity-75 rounded-md w-24 h-10 text-gray text-lg justify-center">
-                                <a href="{{ route('jobs.show', $job) }}">Detail</a>
-                            </div>
+                        <div class="flex items-center border-2 border-gray-600 hover:opacity-75 rounded-md w-24 h-10 text-gray text-lg justify-center">
+                            <a href="{{ route('jobs.show', $job) }}">Detail</a>
                         </div>
                     </div>
                 @endforeach
