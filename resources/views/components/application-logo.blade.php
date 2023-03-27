@@ -3,5 +3,5 @@
 </svg> --}}
 <div class="flex flex-row items-center space-x-3">
     <img class="w-16" src="{{ asset('images/belships-logo.jpg') }}" alt="Belships">
-    <h1 class="text-2xl text-slate-800 font-semibold">Belship (Myanmar) Shipmanagement Ltd</h1>
+    <h1 class="hidden lg:block text-2xl text-slate-800 font-semibold">Belship (Myanmar) Shipmanagement Ltd</h1>
 </div>

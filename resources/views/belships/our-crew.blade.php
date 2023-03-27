@@ -34,4 +34,30 @@
             </ul>                  
         </div>
     </div>
+    <div class="p-6 max-w-8xl mx-auto flex flex-col justify-around text-center space-y-8  text-white text-lg bg-gray-700 items-center lg:h-48 lg:text-justify lg:space-y-0 lg:flex-row">
+        <div>
+            <ul>
+                <h1 class="text-xl">Address</h1>
+                <li>No. 255, Fl 5A, </li>
+                <li>Bo Myat Tun Rd, Botahtaung Tsp, </li>
+                <li>Yangon, Myanmar.</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <h1 class="text-xl">Contact</h1>
+                <li>Tel : 95 1 297768</li>
+                <li>Fax: 95 1 200395</li>
+                <li>Email:belships.myanmar@gmail.com</li>
+            </ul>
+        </div>
+        <div class="">
+            <p class="italic text-center text-xl mt-8">
+                Call us now to register with us. 
+            </p>           
+            <p class="italic text-center text-lg">
+                +95 9 97215 7284 or +95 1 297768    
+            </p>           
+        </div>
+    </div>
 </x-app-layout>

@@ -11,42 +11,42 @@
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px md:ml-6 ml-4 sm:flex">
                     <x-nav-link :href="route('belships.index')" :active="request()->routeIs('belships.index')">
                         {{ __('Home') }}
                     </x-nav-link>
                 </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px md:ml-10 ml-4 sm:flex">
                     <x-nav-link :href="route('belships.about')" :active="request()->routeIs('belships.about')">
                         {{ __('About Us') }}
                     </x-nav-link>
                 </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px md:ml-10 ml-4 sm:flex">
                     <x-nav-link href="https://belships.com.sg/">
                         {{ __('Belships Singapore') }}
                     </x-nav-link>
                 </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px md:ml-10 ml-4 sm:flex">
                     <x-nav-link :href="route('belships.our-crew')" :active="request()->routeIs('belships.our-crew')">
                         {{ __('Our Crew') }}
                     </x-nav-link>
                 </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px md:ml-10 ml-4 sm:flex">
                     <x-nav-link :href="route('belships.vessel-list')" :active="request()->routeIs('belships.vessel-list')">
                         {{ __('Vessel List') }}
                     </x-nav-link>
                 </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px md:ml-10 ml-4 sm:flex">
                     <x-nav-link :href="route('belships.contact')" :active="request()->routeIs('belships.contact')">
                         {{ __('Contact Us') }}
                     </x-nav-link>
                 </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px md:ml-10 ml-4 sm:flex">
                     <x-nav-link :href="route('jobs.index')" :active="request()->routeIs('jobs.index')">
                         {{ __('Job Vacancy') }}
                     </x-nav-link>
                 </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px md:ml-10 ml-4 sm:flex">
                     <x-nav-link :href="route('articles.index')" :active="request()->routeIs('articles.index')">
                         {{ __('Forum') }}
                     </x-nav-link>

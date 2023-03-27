@@ -15,7 +15,11 @@
                     </li>
                 </ul>                  
             </div>
-
+            <div class="mt-8 max-w-6xl mx-auto text-gray-600 dark:text-gray-200 overflow-hidden">
+                <p class="p-6 leading-loose text-5xl font-mono text-center">
+                    "Only good things can come from combining quality management & manning."
+                </p>
+            </div>
             <div class="p-3 text-gray-600 gap-4 dark:text-gray-200 mt-8">
                 <h1 class="text-5xl font-bold font-serif">About Us</h1>
                 <ul class="mt-6 list-disc list-inside text-2xl text-justify">
@@ -34,15 +38,27 @@
                 </ul>                 
             </div>
         </div>
-        
-        <div class="mt-8 max-w-4xl mx-auto text-gray-600 dark:text-gray-200 overflow-hidden">
-            <p class="p-6 leading-loose text-5xl font-mono text-center">
-                "Only good things can come from combining quality management & manning."
-            </p>
-        </div>
+    </div>
 
-        <div class="p-3 mt-8 max-w-7xl mx-auto sm:px-6 lg:px-8 p-3 text-gray-600 dark:text-gray-200">
-            <p class="italic text-center text-lg mt-8">
+    <div class="p-6 max-w-8xl mx-auto flex flex-col justify-around text-center space-y-8  text-white text-lg bg-gray-700 items-center lg:h-48 lg:text-justify lg:space-y-0 lg:flex-row">
+        <div>
+            <ul>
+                <h1 class="text-xl">Address</h1>
+                <li>No. 255, Fl 5A, </li>
+                <li>Bo Myat Tun Rd, Botahtaung Tsp, </li>
+                <li>Yangon, Myanmar.</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <h1 class="text-xl">Contact</h1>
+                <li>Tel : 95 1 297768</li>
+                <li>Fax: 95 1 200395</li>
+                <li>Email:belships.myanmar@gmail.com</li>
+            </ul>
+        </div>
+        <div class="">
+            <p class="italic text-center text-xl mt-8">
                 Call us now to register with us. 
             </p>           
             <p class="italic text-center text-lg">
